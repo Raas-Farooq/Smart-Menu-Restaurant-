@@ -1,0 +1,136 @@
+h2{
+    margin-left:50px;
+    
+    
+}
+.top-header{
+    border-bottom: 2px dotted #22d17f;
+    
+}
+/*  Menus and external links + unordered list code */
+.list-container> li a{
+    text-decoration: none;
+    color:#22d17f;                                                                                                                                               
+}
+@media only screen and (max-width:470px){
+    .list-container> li .btn{
+        font-size:14px;
+    }
+}
+li{
+    padding-left: 7px;
+    /* border: 2px solid black; */
+    
+}
+.menu-links,.ref{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    list-style:none;
+}
+/* .list-container{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+} */
+.btn-light{
+    border-color:black
+}
+.btn-light:hover{
+    border-color:black;
+    background-color:#c9ecdc;
+
+}
+/* You can also change the color of text when hovering by applying hover on anchor 
+.list-container .menu-links > li a:hover{
+    color:white
+} */
+
+
+/* ***** Section Center the Articles holder ***** */
+
+.section-center{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+    grid-gap:20px;
+}
+
+@media only screen and (min-width:950px){
+    .section-center{
+        display:grid;
+        grid-template-columns:repeat(auto-fill,minmax(450px,2fr));
+        grid-gap:20px;
+    }
+
+}
+/* ******Main Section And ARTICLE******  */
+
+
+
+.classical-menu{
+    display:flex;
+    justify-content: space-around;
+    padding:0 30px;
+    /* border:2px solid rgb(139, 233, 139); */
+    margin-bottom:10px;
+}
+
+/* Image styling */
+/* .image-container{
+    border:2px solid green;
+   
+} */
+.image{
+    /* float:left; */
+    /* display:block;
+    margin-right:auto;
+    margin-left:0; */
+    padding:10px;
+    width:170px;
+    height:160px;
+    border:2px solid rgb(139, 233, 139);
+    
+}
+
+/* Article header styling */
+.title{
+    display:flex;
+    justify-content:space-between;
+    margin-left:15px;
+    margin-top:5px;
+    margin-right:10px
+}
+
+
+@media only screen and (min-width:638px) and (max-width:900px){
+    .article-header > .title, h6,
+    .article-header .paragraph{
+        padding:0 0 0 10px;
+        font-size:12px;
+    }
+    .classical-menu{
+        padding:0 10px;
+    }
+}
+.article-header > .title>.price{
+    color:#22d17f 
+}
+
+h6{
+    font-size:18px;
+    font-family:serif;
+    font-weight:bold;
+
+}
+
+
+/* Paragraph */
+.paragraph{
+    font-size: 15px;
+    padding:0 15px;
+}
+.paragraph{
+    text-align:justify;
+    text-justify:inter-character;
+    font-family:serif   
+}

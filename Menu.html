@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="./Menu.css" rel="stylesheet">
+    <title>SuperbMenu</title>
+</head>
+<body>
+    <section class="menu-exterior">
+        <h2 class="text-center top-header">Cool Menu MASHALLAh</h2>
+        <div class="underline"></div>
+        <div class="list-container menu-links">
+
+            <!-- commented these btns because we get it from javascript by return and back tick
+            when we scroll individual items.. it is helpful to return all the items which we defined -->
+
+            <!-- <ul class="menu-links">
+                
+                <li><button class="btn all btn-light" data-where='all'> 
+                    <a href="#">All</a>
+                </button></li>
+                <li><button class="btn breakfast btn-light" data-where='breakfast'> <a href="#">Breakfast</a></button></li>
+                <li><button class="btn lunch btn-light" data-where='lunch'> <a href="#">Lunch</a></button></li>
+                <li><button class="btn shakes btn-light" data-where='shakes'> <a href="#">Shakes</a></button></li>
+             -->
+            </ul> 
+        </div>
+        
+        <div class="section-center">
+           <article class="classical-menu">
+                
+                <div class="image-container">
+                    <img src="./Images/item-3.jpeg" class="image" alt="first-item">
+                </div>
+                <div class="article-header">
+                    <div class="title">
+                            <h6 class="main-title">
+                            Peanut Dreamy
+                            </h6>
+                            <p class="price"> $15.42 </p>
+                    </div>
+                    <div class="article-parag">
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Velit, deleniti fugiat distinctio ipsa ipsum placeat quisquam repellendus soluta?
+                        </p>
+                    </div>
+                
+                </div>
+                
+            </article>
+            <!-- These items are defined by myself and it is not efficient way of coding because we will get these items by innerHtml since they are already in javascript so, we only
+                need 1 article(above defined) which is used to return all the menu items...thus, we get all items by innerhtml from javascript using only 1 article.. it will make easier to get all the items within menu from javascript without creating all items by yourself and further loops and functions -->
+            <!--
+                
+            <article class="classical-menu">
+                
+                <div class="image-container">
+                    <img src="../Images/item-2.jpeg" class="image" alt="item-1">
+                </div>
+                <div class="article-header">
+                    <div class="title">
+                            <h6>
+                            Peanut Dreamy
+                            </h6>
+                            <p> $15.42 </p>
+                    </div>
+                    <div class="article-parag">
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Velit, deleniti fugiat distinctio ipsa ipsum placeat quisquam repellendus soluta?
+
+                        </p>
+                    </div>
+                
+                </div>
+                
+            </article>
+
+            
+
+            <article class="classical-menu">
+                
+                <div class="image-container">
+                    <img src="../Images/item-4.jpeg" class="image" alt="item-1">
+                </div>
+                <div class="article-header">
+                    <div class="title">
+                            <h6>
+                            Peanut Dreamy
+                            </h6>
+                            <p> $15.42 </p>
+                    </div>
+                    <div class="article-parag">
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Velit, deleniti fugiat distinctio ipsa ipsum placeat quisquam repellendus soluta?
+
+                        </p>
+                    </div>
+                
+                </div>
+                
+            </article>
+
+            
+
+            <article class="classical-menu">
+                
+                <div class="image-container">
+                    <img src="../Images/item-5.jpeg" class="image" alt="item-1">
+                </div>
+                <div class="article-header">
+                    <div class="title">
+                            <h6>
+                            Peanut Dreamy
+                            </h6>
+                            <p> $15.42 </p>
+                    </div>
+                    <div class="article-parag">
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Velit, deleniti fugiat distinctio ipsa ipsum placeat quisquam repellendus soluta?
+                           
+                        </p>
+                    </div>
+                
+                </div>
+                
+            </article>
+
+           
+
+            <article class="classical-menu">
+                
+                <div class="image-container">
+                    <img src="../Images/item-6.jpeg" class="image" alt="item-1">
+                </div>
+                <div class="article-header">
+                    <div class="title">
+                            <h6>
+                            Peanut Dreamy
+                            </h6>
+                            <p class="price"> $15.42 </p>
+                    </div>
+                    <div class="article-parag">
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Velit, deleniti fugiat distinctio ipsa ipsum placeat quisquam repellendus soluta?
+             
+                        </p>
+                    </div>
+                
+                </div>
+                
+            </article>
+
+           
+
+            <article class="classical-menu">
+                
+                <div class="image-container">
+                    <img src="../Images/item-7.jpeg" class="image" alt="item-1">
+                </div>
+                <div class="article-header">
+                    <div class="title">
+                            <h6>
+                            Peanut Dreamy
+                            </h6>
+                            <p> $15.42 </p>
+                    </div>
+                    <div class="article-parag">
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Velit, deleniti fugiat distinctio ipsa ipsum placeat quisquam repellendus soluta?
+                            
+                        </p>
+                    </div>
+                
+                </div>
+                
+            </article>
+            
+
+            <article class="classical-menu">
+                
+                <div class="image-container">
+                    <img src="../Images/item-1.jpeg" class="image" alt="item-1">
+                </div>
+                <div class="article-header">
+                    <div class="title">
+                            <h6>
+                            Peanut Dreamy
+                            </h6>
+                            <p> $15.42 </p>
+                    </div>
+                    <div class="article-parag">
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Velit, deleniti fugiat distinctio ipsa ipsum placeat quisquam repellendus soluta?
+                 
+                        </p>
+                    </div>
+                
+                </div>
+                
+            </article>
+           
+            <article class="classical-menu">
+                
+                <div class="image-container">
+                    <img src="../Images/item-8.jpeg" class="image" alt="item-1">
+                </div>
+                <div class="article-header">
+                    <div class="title">
+                            <h6>
+                            Peanut Dreamy
+                            </h6>
+                            <p> $15.42 </p>
+                    </div>
+                    <div class="article-parag">
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Velit, deleniti fugiat distinctio ipsa ipsum placeat quisquam repellendus soluta?
+                           
+                        </p>
+                    </div>
+                
+                </div>
+                
+            </article>
+            
+            <article class="classical-menu">
+                
+                <div class="image-container">
+                    <img src="../Images/item-10.jpeg" class="image" alt="item-1">
+                </div>
+                <div class="article-header">
+                    <div class="title">
+                            <h6>
+                            Peanut Dreamy
+                            </h6>
+                            <p> $15.42 </p>
+                    </div>
+                    <div class="article-parag">
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Velit, deleniti fugiat distinctio ipsa ipsum placeat quisquam repellendus soluta?
+                       
+                        </p>
+                    </div>
+                
+                </div>
+                
+            </article> -->
+        
+    </section>
+
+    <script src="./menu.js"></script>
+</body>
+</html>
